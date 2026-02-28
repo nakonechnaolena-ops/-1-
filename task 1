@@ -1,0 +1,15 @@
+int SimpleArraySum(int[] aa)
+{
+    int x = 0;
+    foreach (int a in aa)
+    {
+        x += a;
+    }
+    return x;
+}
+
+// Тестирование
+int[] aa = { 10, 11, 12 };
+int real = SimpleArraySum(aa);
+int expected = 10 + 11 + 12;
+Console.WriteLine(real == expected ? "Test passed" : "Test failed");
